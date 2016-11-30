@@ -2,7 +2,7 @@
 title: Your blog title
 header-img: img/home-bg.png
 email: shmuel.markel@gmail.com
-copyright_name: shmulim
+copyright_name: shmuli
 description: > # this means to ignore newlines until "baseurl:"
   A short subtitle
 baseurl: "" # the subpath of your site, e.g. /blog

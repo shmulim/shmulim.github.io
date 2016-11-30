@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Shmuli Markel
 title:  "Desktop Notifications of WordPress Events"
 date:   2016-11-29 06:44:15 +0000
 ---

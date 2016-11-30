@@ -52,3 +52,28 @@ app.get('/', function (req, res) {
     
 server.listen(port, ip);
 ```
+
+Then in Electron...
+
+```
+var socket = require('socket.io-client')('ws://notifications-shmulim.rhcloud.com:80');
+var notifier = require('node-notifier');
+```
+
+and..
+
+```
+  socket.on('notification', function (data) {
+    notifier.notify({
+    title: 'Event Published!',
+    message: data.event_name+' event published on '+data.site_name,
+    icon: 'cyp-pin.png',
+    sound: true,
+    wait: true
+  }, function (err, response) {
+    if (err) console.log(err);
+    });
+  });
+```
+
+Finally, add `show: false` to the `BrowserWindow` options.

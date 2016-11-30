@@ -77,3 +77,5 @@ socket.on('notification', function (data) {
 ```
 
 Finally, add `show: false` to the `BrowserWindow` options.
+
+Install `electron-packager` and run `electron-packager . --darwin` from the project directory.

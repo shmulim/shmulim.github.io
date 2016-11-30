@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Growl Notifications for WordPress Events Manager"
+title:  "Desktop Notifications of WordPress Events"
 date:   2016-11-29 06:44:15 +0000
 ---
 

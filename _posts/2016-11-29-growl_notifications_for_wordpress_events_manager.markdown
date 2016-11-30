@@ -71,7 +71,7 @@ and..
     sound: true,
     wait: true
   }, function (err, response) {
-    if (err) console.log(err);
+      if (err) console.log(err);
     });
   });
 ```

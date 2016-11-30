@@ -28,3 +28,27 @@ function ping_notification_server( $post_id, $post, $update ) {
 add_action( 'publish_event', 'ping_notification_server', 10, 3 );
 add_action( 'publish_event_recurring', 'ping_notification_server', 10, 3);
 ```
+
+Then with OpenShift...
+
+```
+var app = require('express')();
+var server = require('http').Server(app);
+var io = require('socket.io')(server);
+
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+var ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+
+io.origins('*:*')
+
+app.get('/', function (req, res) {
+  if (req.query.event_name && req.query.site_name){
+    var event_name  = req.query.event_name;
+    var site_name   = req.query.site_name;
+    io.emit('notification', { event_name: event_name, site_name: site_name });
+    res.send('');
+  }
+});
+    
+server.listen(port, ip);
+```

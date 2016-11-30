@@ -4,7 +4,7 @@ title:  "Desktop Notifications for WordPress Events"
 date:   2016-11-29 06:44:15 +0000
 ---
 
-In this article we take a look at how to create realtime Growl notifications for events that occur within WordPress.
+In this article we take a look at how to create realtime desktop notifications for events that occur within WordPress.
 
 ```
 <?php

@@ -4,7 +4,7 @@ title:  "Desktop Notifications for WordPress Events"
 date:   2016-11-29 06:44:15 +0000
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet tellus eu erat fringilla sagittis at et leo. Duis fringilla sit amet massa a luctus. Pellentesque accumsan risus dui, id dapibus erat sagittis vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget aliquet urna. Cras nec condimentum dolor. Etiam elementum tortor a est lobortis, at porttitor velit auctor. Morbi vestibulum feugiat accumsan. Morbi augue lorem, aliquet at tempor eget, imperdiet ac massa.
+In this article we take a look at how to create realtime Growl notifications for events that occur within WordPress.
 
 ```
 <?php

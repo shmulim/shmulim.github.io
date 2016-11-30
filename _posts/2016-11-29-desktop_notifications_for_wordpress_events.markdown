@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Desktop Notifications of WordPress Events"
+title:  "Desktop Notifications for WordPress Events"
 date:   2016-11-29 06:44:15 +0000
 ---
 
